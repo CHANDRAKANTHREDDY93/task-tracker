@@ -1,0 +1,58 @@
+.jumbotron
+{
+	margin-left: 450px;
+	height: 300px;
+	width: 500px;
+	margin-top: 75px;
+	border: 1px solid black;
+}
+.header
+{
+	float: left;
+	text-align: left;
+	margin-top: -50px;
+	margin-left: 50px;
+}
+.header1
+{
+	float: right;
+	margin-top: -50px;
+}
+.headerText1
+{
+	float: left;
+	text-align: left;
+	margin-left: 50px;
+}
+.headerText2
+{
+	margin-top: -25px;
+	margin-left: 180px;
+}
+.taskName
+{
+	padding-bottom: 25px;
+	text-align: left;
+}
+.changeName
+{
+	margin-left: 75px;
+}
+.taskDescription
+{
+	padding-bottom: 25px;
+	text-align: left;
+}
+.description
+{
+	margin-left: 35px;
+}
+p
+{
+	width: 150px;
+	position: relative;
+	margin-top: -25px;
+	margin-left: 130px;
+	text-align: left;
+	border-radius: 2 solid black;
+}

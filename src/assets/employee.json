@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "1",
+    "age": 27,
+    "name": "Kendra Moreno",
+    "positionName" : "Manager",
+    "gender": "female",
+    "company": "EARTHMARK",
+    "email": "kendramoreno@earthmark.com",
+    "phone": "+1 (834) 575-3193",
+    "ssn": 865516357
+  }
+]

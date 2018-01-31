@@ -1,0 +1,84 @@
+<div class="jumbotron">
+	<div class="col-md-12">
+		<div class="col-md-6 header">Start Time</div>
+		<div class="col-md-6 header1">Current Time</div>
+	</div>
+	<div class="col-md-12">
+		<div class="col-md-6 headerText1">{{today | date:' HH:mm:ss' }}</div>
+		<div class="col-md-6 headerText2">{{hoursDisplay ? hoursDisplay : '00'}} : {{(minutesDisplay) && (minutesDisplay <= 59) ? minutesDisplay : '00'}} : {{(secondsDisplay) && (secondsDisplay <= 59) ? secondsDisplay : '00'}}</div>
+	</div>
+	<br>
+	<div class="taskName">
+		Task Name :  <p contenteditable="true">Task Name </p>
+	</div>
+	<div class="taskDescription">
+		Task Description : <p contenteditable="true">Description </p>
+	</div>
+		<button type="button" class="btn btn-primary" (click)="changeTask()">Change Task</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">End Task</button>
+</div>
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+    	<div class="modal-content">
+        	<div class="modal-header">
+        		<h4 class="modal-title">Change Task Name</h4>
+    			<button type="button" class="close" data-dismiss="modal1">&times;</button>
+        		</div>
+        	<div class="modal-body">
+        		<div class="form-group row">
+  				<label for="example-text-input" class="col-3 col-form-label">Task Name</label>
+  				<div class="col-9">
+    			<input class="form-control" type="text" placeholder="Change task name" id="example-text-input">
+  			</div>
+		</div>
+    </div>
+        	<div class="modal-footer">
+     	   		<button type="button" class="btn btn-default" data-dismiss="modal" (click) ="cancel()">Cancel</button> 	
+        		<button type="button" class="btn btn-default" data-dismiss="modal" (click) ="changeName()">Change Task Name</button>
+        	</div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+    	<div class="modal-content">
+        	<div class="modal-header">
+        		<h4 class="modal-title">Change Task Name</h4>
+    			<button type="button" class="close" data-dismiss="modal1">&times;</button>
+        		</div>
+        	<div class="modal-body">
+        		<div class="form-group row">
+  				<label for="example-text-input" class="col-3 col-form-label">Description</label>
+  				<div class="col-9">
+    			<input class="form-control" type="text" placeholder="Change Task Description" id="example-text-input">
+  			</div>
+		</div>
+    </div>
+        	<div class="modal-footer">
+     	   		<button type="button" class="btn btn-default" data-dismiss="modal" (click) ="cancel()">Cancel</button> 	
+        		<button type="button" class="btn btn-default" data-dismiss="modal" (click) ="changeName()">Change Description</button>
+        	</div>
+      </div>
+    </div>
+</div>
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+    	<div class="modal-content">
+        	<div class="modal-header">
+        		<h4 class="modal-title">Task Tracker</h4>
+        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        	</div>
+        	<div class="modal-body">
+        		<p>The data will be closed once you end the task</p><br>
+        		<p>Are you sure you want to end task?</p>
+        	</div>
+        	<div class="modal-footer">
+     	   		<button type="button" class="btn btn-default" data-dismiss="modal" (click) ="cancel()">Cancel</button> 	
+        		<button type="button" class="btn btn-default" data-dismiss="modal" (click) ="endTask()">End Task</button>
+        	</div>
+      </div>
+    </div>
+</div>

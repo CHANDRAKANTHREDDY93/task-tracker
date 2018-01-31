@@ -1,0 +1,42 @@
+.panel-heading
+{
+	margin-top: 25px;
+	font-size: 34px;
+	font-weight: bold;
+}
+h2
+{
+	text-align: center;
+	padding: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+li
+{
+	font-size: 18px;
+	color: #CCCCFF;
+	list-style-type: none;
+	float: left;
+	text-align: center;
+	margin-left: 10px;
+
+}
+a
+{
+	height:40px;
+	width: 75px;
+	text-decoration: none;
+	color: #dce4ec !important;
+	border-radius: 15px;
+	padding: 15px;
+}
+a:hover
+{
+	background-color: #A9A9A9;
+}
+form
+{
+	margin-left: 450px;
+	margin-top: -30px;
+}

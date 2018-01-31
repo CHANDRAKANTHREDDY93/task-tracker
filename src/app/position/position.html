@@ -1,0 +1,73 @@
+
+<h4>Welcome Admin</h4>
+<span>
+	Position : Manager
+</span>
+<div class="row">
+	<div class="col-md-3">
+		<ul class="jumbotron">
+			<h5>Roles</h5>
+			<li (click) = "show()" ion-button [style.color]="hexColor">Team Lead</li>
+			<hr>
+			<li (click) = "show1()" ion-button [style.color]="hexColor1">System Manager</li>
+			<hr>
+			<li (click) = "show2()" ion-button [style.color]="hexColor2">Developer</li>
+		</ul>
+	</div>
+	<!-- [ngClass]="{'background-color': backgroundColor}" -->
+	<div class="col-md-7 table-responsive">
+		<table class="table table-bordered jumbotron" *ngIf = "hideTable">
+			<tr>
+				<th>Task Name</th>
+				<th>Task Description</th>
+				<th>Task Status</th>
+			</tr>
+			<tr>
+				<td>dfklvjd</td>
+				<td>fagegeet</td>
+				<td><button class="btn btn-default btn-primary" target = "_blank" (click) = "start()" [attr.target]="target">Start Task</button></td>
+			</tr>
+				<tr>
+				<td>fgerager</td>
+				<td>fagegeet</td>
+				<td><button class="btn btn-default btn-primary" target = "_blank" (click) = "start()">Start Task</button></td>
+			</tr>
+				<tr>
+				<td>fgerager</td>
+				<td>fagegeet</td>
+				<td><button class="btn btn-default btn-primary" target = "_blank" (click) = "start()">Start Task</button></td>
+			</tr>
+		</table>
+		<div class="col-md-5">
+		<table class="table1 table-bordered jumbotron" *ngIf = "showTable">
+			<tr class="tr1">
+				<th>Task Name</th>
+				<th>Description</th>
+				<th>Task Status</th>
+			</tr>
+			<tr class="tr1">
+				<td>No Task</td>
+				<td>--</td>
+				<td><button class="btn btn-default btn-primary" target = "_blank" (click) = "addTask()">Add Task</button></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+</div>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+    	<div class="modal-content">
+        	<div class="modal-header">
+        		<h4 class="modal-title">Task Tracker</h4>
+        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        	</div>
+        <div class="modal-body">
+        	<p>You are about to start your task.</p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Start</button>
+        </div>
+      </div>
+    </div>
+ </div>

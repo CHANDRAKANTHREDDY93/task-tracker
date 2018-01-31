@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="jumbotron">
+		<div class="form-group">
+  			<label for="usr">Name:</label>
+  			<input type="text" class="form-control" [(ngModel)] = "data.id" name="id" value = "id">
+		</div>
+		<div class="form-group">
+  			<label for="pwd">Password:</label>
+  			<input type="password" class="form-control" [(ngModel)] = "data.pwd" name = "pwd" value="pwd">
+		</div>
+		<button type="button" class="btn" (click) = "submit(data.id, data.pwd)">Login</button>
+	</div>	
+</div>
